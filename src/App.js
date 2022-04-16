@@ -7,9 +7,13 @@ import Header from './components/Header/Header'
 import Service from './components/Service/Service'
 import About from './components/About/About'
 import Blog from './components/Blog/Blog'
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
-  console.log('hello')
+ 
+  const Page=()=>{
+    console.log('Hello')
+  }
   return (
     <div className="App">
     <Header/>
@@ -18,6 +22,8 @@ function App() {
     <Route path="/service" element={<Service />}></Route>
     <Route path="/blog" element={<Blog />}></Route>
     <Route path="/about" element={<About />}></Route>
+    <Route path="*" element={<NotFound />}></Route>
+
    
     </Routes>
   
