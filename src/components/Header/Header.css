@@ -1,0 +1,15 @@
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+div .nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:stretch;
+
+
+}
+.menu{
+    margin-right:40px;
+}
