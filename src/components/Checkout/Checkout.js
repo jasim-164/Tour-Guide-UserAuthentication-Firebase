@@ -36,7 +36,7 @@ const Checkout = () => {
         <aside id='description'>
           <h2>Original wayfarer classic</h2>
           <h3>Green classic g-15</h3>
-          <img src='http://www.ray-ban.com/_repository/_resources/_collections/sun/RB4105/601/_default_500_300/601.png'/>
+          <img src='http://www.ray-ban.com/_repository/_resources/_collections/sun/RB4105/601/_default_500_300/601.png' alt="checkout"/>
           <h1>$150</h1>
           <Button id='editOrder' className="mb-5">Edit the Order</Button>
         </aside>

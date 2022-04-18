@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import "./Login.css"
-import app from "../../firebase.init"
+import auth from "../../firebase.init"
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 
-const auth = getAuth(app);
+
 
 
 const Login = () => {
