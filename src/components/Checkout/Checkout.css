@@ -1,0 +1,18 @@
+.checkout-body{
+    background-color: aqua;
+    font-family: sans-serif;
+    margin-bottom:40px
+}
+#container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+margin-right: 100px;
+
+}
