@@ -1,15 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Login.css"
+import app from "../../firebase.init"
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+
+const auth = getAuth(app);
+
+
 const Login = () => {
+    const navigate = useNavigate()
+    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    let errorMessage ;
+    if (error) {
+        errorMessage =(
+          <div>
+            <p>Error: {error.message}</p>
+          </div>
+        );
+      }
+      if (loading) {
+        return <p>Loading...</p>;
+      }
+      if (user) {
+          navigate('/');
+      }
+//     const [email,setemail] = useState('');
+//     const [password,setpassword] = useState('');
+//   const handleEmail=(event)=>{
+//       setemail(event.target.value);
+//       console.log(event.target.value);
+//   }
+//   const handlePassword=(event)=>{
+//       setpassword(event.target.value);
+//       console.log(event.target.value);
+//   }
+//   const passwordSignIn=()=>{
+//     createUserWithEmailAndPassword(auth, email, password)
+//     .then((userCredential) => {
+//       // Signed in 
+//       const user = userCredential.user;
+//       console.log(user);
+//       // ...
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//       // ..
+//     });
+//   }
+
     return (
         <div>
         <h3>Please Login</h3>
       
         
         <form>
-            <input type="email" placeholder='Your Email' />
+            <input type="email"  placeholder='Your Email' required />
             <br />
-            <input type="password" name="" id="" placeholder='Password'/>
+            <input type="password" name="" id="" placeholder='Password' required/>
             <br />
             <input type="submit" value="Login" />
         </form>
@@ -26,7 +74,8 @@ const Login = () => {
             </div>
 
             <div style={{margin: '20px'}}>
-            <button >Google Sign In</button>
+            <h4 className="bg-danger">{errorMessage}</h4>
+            <button onClick={() => signInWithGoogle()}>Google Sign In</button>
             </div>
 
         </div>
