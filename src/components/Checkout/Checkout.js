@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import "./Checkout.css"
-const Checkout = () => {
+const Checkout = ({_id,place,picture,price,description}) => {
     return (
         <div className="checkout-body">
         <h1 className="bg-info">Checkout Form</h1>
@@ -36,7 +36,7 @@ const Checkout = () => {
         <aside id='description'>
           <h2>Original wayfarer classic</h2>
           <h3>Green classic g-15</h3>
-          <img src='http://www.ray-ban.com/_repository/_resources/_collections/sun/RB4105/601/_default_500_300/601.png' alt="checkout"/>
+          <img src={picture} alt="checkout"/>
           <h1>$150</h1>
           <Button id='editOrder' className="mb-5">Edit the Order</Button>
         </aside>

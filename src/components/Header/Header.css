@@ -25,3 +25,20 @@ div .nav{
     text-decoration: none;
     cursor: pointer;
 }
+@media screen and (max-width: 800px) {
+    .header{
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+        background-color: black;
+        min-height: 10vh;
+    }
+    div .nav{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items:stretch;
+    
+    
+    }
+ }

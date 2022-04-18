@@ -19,13 +19,13 @@ const Header = () => {
        
         <div className="menu"><Link className="menu" to='/'>TourGuide</Link></div>
 
-       <div className="nav">
+       <div className="nav mt-3">
         <div className="menu-list"><Link className="menu" to='/'>Home</Link></div> 
         <div className="menu-list"><Link className="menu" to='/Service'>Service</Link></div>
         <div className="menu-list"><Link className="menu" to='/blog'>Blog</Link></div>
         <div className="menu-list"><Link className="menu" to='/about'>About Me</Link></div>
         {
-            user? <div className="menu-list"><button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button></div>  :
+            user? <div className=""><button className='btn btn-link text-white text-decoration-none pb-2' onClick={handleSignOut}>sign out</button></div>  :
             <div className="menu-list"><Link className="menu" to='/login'>Login</Link></div>
         }
         
