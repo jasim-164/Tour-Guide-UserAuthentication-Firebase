@@ -1,0 +1,10 @@
+.line{
+    height:3px;
+    width:70px;
+    background-color:aqua;
+}
+.signin-google{
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+}

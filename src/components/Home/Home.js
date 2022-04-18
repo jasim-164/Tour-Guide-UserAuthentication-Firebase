@@ -15,6 +15,7 @@ const Home = () => {
     //console.log(tours[0].place);
     //<h1>{tours[0].price}</h1>
     // return(<Product key={tour._id} tour={tour} />)
+    
     return (
         <div>
         <div>

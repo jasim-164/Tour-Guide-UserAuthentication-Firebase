@@ -2,16 +2,16 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home'
-
 import Header from './components/Header/Header'
 import Service from './components/Service/Service'
 import About from './components/About/About'
 import Blog from './components/Blog/Blog'
 import NotFound from './components/NotFound/NotFound'; 
+import Login from './components/Login/Login'
+import Checkout from './components/Checkout/Checkout'
 import Footer from './components/Footer/Footer'
-import Button from 'react-bootstrap/Button';
-import { Col } from 'react-bootstrap';
 
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 function App() {
  
@@ -26,6 +26,13 @@ function App() {
     <Route path="/service" element={<Service />}></Route>
     <Route path="/blog" element={<Blog />}></Route>
     <Route path="/about" element={<About />}></Route>
+    <Route path="/login" element={<Login />}></Route>
+    <Route path="/checkout" element={
+      <RequireAuth>
+      <Checkout />
+      </RequireAuth>
+      
+    }></Route>
     <Route path="*" element={<NotFound />}></Route>
     </Routes>
    
