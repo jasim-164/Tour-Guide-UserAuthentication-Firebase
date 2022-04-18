@@ -7,7 +7,11 @@ import Header from './components/Header/Header'
 import Service from './components/Service/Service'
 import About from './components/About/About'
 import Blog from './components/Blog/Blog'
-import NotFound from './components/NotFound/NotFound';
+import NotFound from './components/NotFound/NotFound'; 
+import Footer from './components/Footer/Footer'
+import Button from 'react-bootstrap/Button';
+import { Col } from 'react-bootstrap';
+
 
 function App() {
  
@@ -23,9 +27,10 @@ function App() {
     <Route path="/blog" element={<Blog />}></Route>
     <Route path="/about" element={<About />}></Route>
     <Route path="*" element={<NotFound />}></Route>
-
-   
     </Routes>
+   
+   <Footer/>
+   
   
     </div>
   );

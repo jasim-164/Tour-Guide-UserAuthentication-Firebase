@@ -2,6 +2,8 @@
     display:flex;
     align-items:center;
     justify-content:space-evenly;
+    background-color: black;
+    min-height: 10vh;
 }
 div .nav{
     display:flex;
@@ -12,4 +14,14 @@ div .nav{
 }
 .menu{
     margin-right:40px;
+ color:white; 
+}
+.menu Link{
+    color:white; 
+    text-decoration: none;
+}
+.menu{
+    color:white; 
+    text-decoration: none;
+    cursor: pointer;
 }

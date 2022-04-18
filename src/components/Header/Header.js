@@ -6,13 +6,13 @@ const Header = () => {
         <div>
         <div className="header">
 
-        <div>TourGuide</div>
+        <div className="menu">TourGuide</div>
 
        <div className="nav">
-        <div className="menu"><Link to='/'>Home</Link></div> 
-        <div className="menu"><Link to='/Service'>Service</Link></div>
-        <div className="menu"><Link to='/blog'>Blog</Link></div>
-        <div className="menu"><Link to='/about'>About Me</Link></div>
+        <div className="menu-list"><Link className="menu" to='/'>Home</Link></div> 
+        <div className="menu-list"><Link className="menu" to='/Service'>Service</Link></div>
+        <div className="menu-list"><Link className="menu" to='/blog'>Blog</Link></div>
+        <div className="menu-list"><Link className="menu" to='/about'>About Me</Link></div>
         </div>
 
         </div>

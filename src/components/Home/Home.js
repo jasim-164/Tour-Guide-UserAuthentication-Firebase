@@ -1,5 +1,8 @@
 import React,{useState,useEffect} from 'react';
+import { PageItem } from 'react-bootstrap';
+import "./Home.css"
 import Product from '../Product/Product'
+import photo1 from "../../images/tourguide.jpg"
 const Home = () => {
     const [tours,setTours]=useState([]);
 
@@ -13,7 +16,11 @@ const Home = () => {
     //<h1>{tours[0].price}</h1>
     // return(<Product key={tour._id} tour={tour} />)
     return (
-        <div><div>{
+        <div>
+        <div>
+        <img src={photo1} alt="place" height=" " width=""/>
+        </div>
+        <div className="product-container">{
             tours.map((tour) =>{
                return (
                    <Product key={tour._id} tour={tour}/>
