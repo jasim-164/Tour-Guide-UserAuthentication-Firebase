@@ -3,12 +3,12 @@
     align-items:center;
     justify-content:space-evenly;
     background-color: black;
-    min-height: 10vh;
+ 
 }
-div .nav{
+div .home-link{
     display:flex;
-    justify-content:space-around;
-    align-items:stretch;
+    justify-content:center;
+    align-items:center;
 
 
 }

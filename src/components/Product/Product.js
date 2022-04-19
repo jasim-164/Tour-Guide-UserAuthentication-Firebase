@@ -12,10 +12,10 @@ const Product = ({tour}) => {
             <div className="container">
             <div className="product" key={_id}>
             <h1 className="">{place}</h1>
-            <div><img src={picture} height="200" width="200"alt={place}  /></div>
+            <div><img src={picture} height="250" width="250"alt={place}  /></div>
             {
                 description.length>200 ? 
-                <p>{description.slice(0,200)} ...</p>: <p>{description}</p>
+                <p>{description.slice(0,210)} ...</p>: <p>{description}</p>
             }
 
             <h4>{price} per tour</h4>
