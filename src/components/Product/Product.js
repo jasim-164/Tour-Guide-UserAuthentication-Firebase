@@ -21,7 +21,7 @@ const Product = ({tour}) => {
             <h4>{price} per tour</h4>
             
            <Link to='/checkout'> 
-            <Button as={Col} variant="primary" >Purchase</Button>
+            <Button as={Col} variant="primary" className="mt-2 mb-3">Purchase</Button>
            </Link>
 
 

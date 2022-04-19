@@ -2,6 +2,8 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import photo1 from "../../../images/tourguide.jpg"
 import photo2 from "../../../images/TourGuide-2.png"
+import photo3 from "../../../images/tourguide3.jpg"
+
 const CarouselItem = () => {
   
     return (
@@ -34,7 +36,7 @@ const CarouselItem = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={photo2}
+            src={photo3}
             alt="Third slide"
           />
           <Carousel.Caption>

@@ -10,7 +10,7 @@ const Footer = () => {
     const year= new Date().getFullYear();
     return (
         <div>
-<footer class=" text-center bg-secondary text-white">
+<footer class=" text-center bg-secondary text-white mt-5">
 
   <div class="container p-4 pb-0">
     
